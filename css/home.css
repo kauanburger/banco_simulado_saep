@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    background-color: #388DC9;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h3{
+    margin-left: 20px;
+    color: white;
+}
+
+header button{
+    margin-right: 20px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main h3{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+main table{
+    margin-left: 20px;
+}
