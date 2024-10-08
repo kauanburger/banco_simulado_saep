@@ -19,8 +19,8 @@
         <button class="exit_button" onclick="exit()">SAIR</button>
     </header>
     <div class="header_main">
-            <h3 style="margin-bottom: 20px;">Cadastrar Cliente</h3>
-            <a href="home.php" class="button_cadastrar"> VOLTAR</a>
+            <h3 style="margin-bottom: 20px; margin-left: 40px;">Cadastrar Cliente</h3>
+            <a href="home.php"> <button class="button_cadastrar">VOLTAR</button></a>
     </div>
     <main>
         <div class="insert_box">
@@ -33,11 +33,13 @@
                 }
             ?>
                 <h4>Nome</h4>
-                <br>
-                <input type="text" name="nome_cliente">
-                <br>
-                <br>
-                <input type="submit" value="Cadastrar">
+                
+                <div>
+                    <input type="text" name="nome_cliente">
+                    <br>
+                    <br>
+                    <input type="submit" value="Cadastrar">
+                </div>
             </form>
         </div>  
     </main>

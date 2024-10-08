@@ -21,7 +21,7 @@
     <main>
         <div class="header_main">
             <h3 style="margin-bottom: 20px;">Lista de clientes</h3>
-            <a href="cadastrar_cliente.php" class="button_cadastrar"> CADASTRAR CLIENTE</a>
+            <a href="cadastrar_cliente.php"> <button class="button_cadastrar">CADASTRAR CLIENTE</button></a>
         </div>
         <table>
             <tr>

@@ -21,7 +21,7 @@
     <main>
         <div class="header_main">
             <h3 style="margin-bottom: 20px;">INFORMAÇÕES DO CLIENTE: <?php echo $_POST['nome_cliente'] ?></h3>
-            <a href="home.php" class="button_cadastrar"> VOLTAR</a>
+            <a href="home.php"> <button class="button_cadastrar">VOLTAR</button></a>
         </div>
         <table>
             <tr>
@@ -64,7 +64,7 @@
                                     <td><?php echo htmlspecialchars($numero_conta); ?></td>
                                     <td><?php echo htmlspecialchars($endereco_cliente); ?></td>
                                     <td>
-                                        <form action="cadastrar_cartao.php" method = "POST">
+                                        <form action="cadastrar_cartao.php" method= "POST">
                                             <input type="hidden" name="id_cliente" value="<?php echo $id_cliente ?>">
                                             <input type="hidden" name="nome_cliente" value="<?php echo $nome_cliente ?>">
                                             <input type="submit" value="Cadastar cartão" id="alterar">

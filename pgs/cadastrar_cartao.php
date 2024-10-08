@@ -21,7 +21,7 @@
     <main>
         <div class="header_main">
             <h3 style="margin-bottom: 20px;">CADASTRO DO CARTÃO DO CLIENTE: </h3>
-            <a href="home.php" class="button_cadastrar"> VOLTAR</a>
+            <a href="home.php"> <button class="button_cadastrar">VOLTAR</button></a>
         </div>
                 <?php
                     // Conexão com o banco de dados
