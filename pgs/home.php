@@ -62,7 +62,8 @@
                                                 <input type="hidden" name="nome_cliente" value="<?php echo $nome_cliente ?>">
                                                 <input type="submit" value="Visualizar" id="alterar">
                                             </form>
-                                            <form action="function/excluir_cliente.php" method="POST">
+                                            <form action="../functions/excluir_cliente.php" method="POST">
+                                                <input type="hidden" name="id_cliente" value="<?php echo $numero_cliente ?>">
                                                 <input type="submit" value="Excluir" id="delete">
                                             </form>
                                         </div>
