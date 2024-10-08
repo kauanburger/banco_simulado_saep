@@ -40,47 +40,6 @@ main h4{
     margin-left: 20px;
 }
 
-main table{
-    margin-left: 20px;
-    border: 1px solid black;
-    width: 500px;
-    height: 200px;
-}
-
-main table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-.acoes_row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-#alterar{
-    background-color: greenyellow;
-    border: 0px;
-    height: 30%;
-    width: 120%;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-} 
-
-#delete{
-    background-color: red;
-    border: 0px;
-    height: 30%;
-    width: 120%;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
 .header_main{
     display: flex;
     justify-content: space-between;
@@ -94,6 +53,14 @@ main table, th, td {
 
 .insert_box{
     margin-left: 40px;
+    border: 1px solid black;
+    width: 230px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.insert_box form{
+    margin-left: 10px;
 }
 
 .button_cadastrar{
