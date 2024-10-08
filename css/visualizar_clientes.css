@@ -52,7 +52,7 @@ main table, th, td {
 .acoes_row{
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -60,7 +60,7 @@ main table, th, td {
 #alterar{
     background-color: greenyellow;
     border: 0px;
-    height: 70%;
+    height: 30%;
     width: 120%;
     border-radius: 5px;
     cursor: pointer;
@@ -70,7 +70,7 @@ main table, th, td {
 #delete{
     background-color: red;
     border: 0px;
-    height: 70%;
+    height: 30%;
     width: 120%;
     border-radius: 5px;
     cursor: pointer;
