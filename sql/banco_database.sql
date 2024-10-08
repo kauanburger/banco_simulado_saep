@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 01/10/2024 às 14:32
+-- Host: 127.0.0.1:3306
+-- Tempo de geração: 08/10/2024 às 21:34
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -45,8 +45,8 @@ DROP TABLE IF EXISTS `tb_sgb_cliente`;
 CREATE TABLE `tb_sgb_cliente` (
   `id_cliente` int(11) NOT NULL,
   `cliente_nome` varchar(255) NOT NULL,
-  `cliente_numero_conta` int(11) NOT NULL,
-  `cliente_endereco` varchar(255) NOT NULL,
+  `cliente_numero_conta` int(11) DEFAULT NULL,
+  `cliente_endereco` varchar(255) DEFAULT NULL,
   `id_tb_sgb_gerente` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -64,6 +64,13 @@ CREATE TABLE `tb_sgb_gerente` (
   `gerente_senha` varchar(255) NOT NULL,
   `gerente_ativo` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Despejando dados para a tabela `tb_sgb_gerente`
+--
+
+INSERT INTO `tb_sgb_gerente` (`id_gerente`, `gerente_nome`, `gerente_email`, `gerente_senha`, `gerente_ativo`) VALUES
+(1, 'Kauan', 'kauan@gmail.com', 'kauan_007', 1);
 
 --
 -- Índices para tabelas despejadas
@@ -103,13 +110,13 @@ ALTER TABLE `tb_sgb_cartao_credito`
 -- AUTO_INCREMENT de tabela `tb_sgb_cliente`
 --
 ALTER TABLE `tb_sgb_cliente`
-  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `tb_sgb_gerente`
 --
 ALTER TABLE `tb_sgb_gerente`
-  MODIFY `id_gerente` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_gerente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restrições para tabelas despejadas

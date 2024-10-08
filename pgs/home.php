@@ -23,12 +23,6 @@
             <h3 style="margin-bottom: 20px;">Lista de clientes</h3>
             <a href="cadastrar_cliente.php"> <button class="button_cadastrar">CADASTRAR CLIENTE</button></a>
         </div>
-        <table>
-            <tr>
-                <th>Número</th>
-                <th>Nome</th>
-                <th>Ações</th>
-            </tr>
                 <?php
                     // Conexão com o banco de dados
                     $hostname = "127.0.0.1";
@@ -46,7 +40,13 @@
 
                         $executeClientes = $conexao -> query($SelectClientes);
 
-                        if($executeClientes && $executeClientes -> num_rows > 0){
+                        if($executeClientes && $executeClientes -> num_rows > 0){?>
+                            <table>
+                                <tr>
+                                    <th>Número</th>
+                                    <th>Nome</th>
+                                    <th>Ações</th>
+                                </tr><?php
                             while($rowCliente = $executeClientes -> fetch_assoc()){
                                 $numero_cliente = $rowCliente['id_cliente'];
                                 $nome_cliente = $rowCliente['cliente_nome'];
@@ -73,7 +73,7 @@
                                 echo' ';
                             }
                         } else{
-                            echo "Nenhum Cliente encontrado para você";
+                            echo "<h4 style='margin-left: 20px;'>Nenhum Cliente encontrado para você</h4>";
                         }
                     }
                 ?>
